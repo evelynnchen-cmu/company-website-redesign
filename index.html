@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Evelynn Chen">
+    <meta name="keywords" content="Happy Day Dessert Factory, Pittsburgh, PA">
+    <meta name="description" content="Happy Day Dessert Factory">
+    <!-- source: https://www.w3schools.com/howto/tryit.asp?font=DM%20Sans -->
+    <link href="https://fonts.googleapis.com/css?family=DM Sans" rel="stylesheet">
+    <script src="js/jquery-3.6.4.min.js" type="text/javascript"> </script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"> </script>
+    <script src="js/scripts.js"> </script>
+    <!-- library source: https://github.com/michalsnik/aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!-- library source: https://flickity.metafizzy.co/#feature-showcase -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css">
+
+    <title>Home - Happy Day Dessert Factory</title>
+    <!-- source: https://www.w3schools.com/howto/howto_html_favicon.asp -->
+    <link rel="icon" type="image/x-icon" href="images/logo.png"> 
+    
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="nav_bar">
+            <nav>           
+                <a href="index.html"><img src="images/logo.png" alt="Happy Day Dessert Factory Logo"></a>     
+                <a class="nav_bar_text" href="our_menu.html">Our Menu</a> 
+                <a class="nav_bar_text" href="catering.html">Catering</a> 
+                <a class="nav_bar_text" href="our_location.html">Reach Us</a> 
+                <a class="nav_bar_text" href="contact_us.html">Got Feedback?</a><br>
+            </nav>
+        </div>
+
+        <div id="promos" data-aos="fade-up">
+            <div class="promo_columns" id="monthly_promo">
+                <h2>Monthly Promo</h2>
+                <img src="images/homepage/choco_cake_slice.jpg" alt="Triple Chocolate Cake Slice">
+                <h3>Triple Chocolate Cake</h3>
+            </div>
+            <div class="promo_columns" id="daily_promo">
+                <h2>Daily Promo</h2>
+                <img src="images/homepage/choco_cookie.jpg" alt="Chocolate Chip Cookie">
+                <h3>Chocolate Chip Cookie</h3>
+            </div>
+            <div class="promo_columns" id="monthly_coupons">
+                <h2>Monthly Coupons</h2>
+                <img src="images/homepage/coupons.png" alt="Monthly Coupons"><br>
+                <button onclick="window.open('images/homepage/coupons_print.pdf');" class="button" data-aos="slide-left">Get Coupons</button> 
+            </div>
+        </div>
+
+        <div id="about_us">
+            <h1 id="bookmark">Where Smiles are Made Fresh Daily</h1>
+            <!-- code adapted from https://flickity.metafizzy.co/ -->
+            <div class="main-carousel" data-flickity='{ "autoPlay": "true" }'>
+                <div class="carousel-cell"><img src="images/homepage/pic_gallery_1.jpg" alt="Worker scooping ice cream"></div>
+                <div class="carousel-cell"><img src="images/homepage/pic_gallery_2.jpg" alt="Two workers holding up an ice cream cone"></div>
+                <div class="carousel-cell"><img src="images/homepage/pic_gallery_3.jpg" alt="Happy Day Dessert Factory shirts"></div>
+                <div class="carousel-cell"><img src="images/homepage/pic_gallery_4.jpg" alt="Almond milk soft serve machine"></div>
+                <div class="carousel-cell"><img src="images/homepage/pic_gallery_5.jpg" alt="Two water ice desserts"></div>
+                <div class="carousel-cell"><img src="images/homepage/pic_gallery_6.jpg" alt="4 people in a circle talking"></div>
+                <div class="carousel-cell"><img src="images/homepage/pic_gallery_7.jpg" alt="worker making a sundae"></div>
+            </div>
+
+            <div id="story">
+                <h3>Our goal is to put a fresh twist on a familiar treat, and we accomplish this with our 12+ years of experience in the frozen desserts industry.<br><br>
+                All of our products use premium ingredients. For example our Premium Homemade Hard Ice Cream is made with a 15% butterfat ice cream base, our Soft Custard is made with a 10% butterfat custard base, and our Water Ice is fat-free and cholesterol-free! Our additional products where you can also find natural and fresh flavors are Stackers, Ice Shakes, Twisters, milk shakes, sundaes, fresh baked cookies, ice cream sandwiches, ice cream cakes, frozen pies, waffle cones and bottled water.<br><br>
+                Our fantastic high-quality products will have loyal customers line up out the door and patiently wait for their favorite treat, because we've become an essential part of their lifestyle. Newcomers will quickly realize what they are missing out on and not only adapt the lifestyle, but internalize our slogan “Smiles made fresh daily!”</h3>
+            </div>
+        </div>
+
+        <div id="testimonials" data-aos="zoom-out">
+            <h1>Testimonials</h1>
+
+            <div class="testimonial_columns" id="testimonial_1">
+                <h3>This is the best ice cream I've ever had! It's my favorite after-school treat,
+                    especially after my really hard math tests. I believe this ice cream gives me superpowers
+                    that makes me do better in school! Try it!!
+                </h3>
+                <h3>- Andy Lee (6)</h3>
+                <img src="images/homepage/testimonial_1.jpg" alt="6-year old kid">
+            </div>
+
+            <div class="testimonial_columns" id="testimonial_2">
+                <h3>Great little ice cream shop with a cozy seating area. I got the cherry vanilla
+                    and it was amazing. My wife got the toffee and said it was just the right amount
+                    of sweet. We will definitely be back soon!</h3>
+                <h3>- Anthony Burris (36)</h3>
+                <img src="images/homepage/testimonial_2.jpg" alt="36-year old man">
+            </div>
+
+            <div class="testimonial_columns" id="testimonial_3">
+                <h3>They had amazing dairy-free options! I got the mango water ice 
+                    and it is the best in Pittsburgh. My friend had the old
+                    fashioned vanilla and said it was creamy and smooth. I give it
+                    a 5 out of 5 stars.</h3>
+                <h3>- Jenny Locus (23)</h3>
+                <img src="images/homepage/testimonial_3.jpg" alt="23-year old woman">
+            </div>
+            
+        </div>
+
+        <div id="tour">
+            <div class="tour_columns" id="tour_text">
+                <h1>Take a Virtual Tour:</h1>
+                <h2>Where Smiles are Made Fresh Daily</h2>
+            </div>
+            <div class="tour_columns">
+                <!-- 560 315 -->
+                <iframe src="https://www.youtube.com/embed/F3__YFGOyZ4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <div class="footer_columns" id="footer_links">
+            <a href="index.html">Home</a><br>
+            <a href="index.html#bookmark">Our Story</a><br> 
+            <a href="our_menu.html">Our Menu</a><br>
+            <a href="catering.html">Catering</a><br> 
+            <a href="our_location.html#bookmark2">Store Hours</a><br>
+            <a href="our_location.html">Reach Us</a><br> 
+            <a href="contact_us.html">Feedback Form</a> 
+        </div>
+
+        <div class="footer_columns" id="footer_logo">
+            <img src="images/logo.png" width="150" height="150" alt="Happy Day Dessert Factory Logo">
+        </div>
+
+        <div class="footer_columns" id="footer_address">
+            <p>Happy Day Dessert Factory<br>
+                906A Western Ave.<br>
+                Pittsburgh, PA 15233</p>
+                <!-- source: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/ -->
+                <button onclick="window.location.href = 'contact_us.html';" class="button">Contact Us</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+    
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    
+</body>
+</html>

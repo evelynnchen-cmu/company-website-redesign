@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Evelynn Chen">
+    <meta name="keywords" content="Happy Day Dessert Factory, Pittsburgh, PA">
+    <meta name="description" content="Happy Day Dessert Factory">
+    <!-- source: https://www.w3schools.com/howto/tryit.asp?font=DM%20Sans -->
+    <link href="https://fonts.googleapis.com/css?family=DM Sans" rel="stylesheet">
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css">
+    <script src="js/jquery-3.6.4.min.js" type="text/javascript"> </script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"> </script>
+    <script src="js/scripts.js"> </script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+
+    <title>Got Feedback? - Happy Day Dessert Factory</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png"> 
+    
+</head>
+
+<body>
+    <div id="container">
+        <div id="nav_bar">
+            <nav>    
+                <a href="index.html"><img src="images/logo.png" alt="Happy Day Dessert Factory Logo"></a>        
+                <a class="nav_bar_text" href="our_menu.html">Our Menu</a> 
+                <a class="nav_bar_text" href="catering.html">Catering</a> 
+                <a class="nav_bar_text" href="our_location.html">Reach Us</a> 
+                <a class="nav_bar_text selected" href="contact_us.html">Got Feedback?</a><br>
+
+            </nav>
+        </div>
+
+        <div id="contact_title">
+            <h1 data-aos="fade-up">Happiness Awaits</h1>
+            <h2 data-aos="slide-right">Your feedback is our secret ingredient.</h2>
+            <h3 data-aos="fade-up">*required field</h3>
+        </div>
+
+        <div id="contact_form" data-aos="fade-up">
+            <form name="myForm" action="mailto:info@happydaydessertfactory.com" onsubmit="return validate()" method="post">
+                <fieldset>
+                    <label for="Name"><strong>Name*:</strong></label>
+                    <input type="text" id="Name" name="Name" value="" placeholder="Your Name" maxlength="150" required><br><br>
+
+                    <label for="email"><strong>Email*:</strong></label>
+                    <!-- pattern from https://www.w3schools.com/tags/att_input_pattern.asp -->
+                    <input type="email" id="email" name="email" value="" placeholder="smiley@happy.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="200" required><br><br>
+
+                    <label for="zipcode"><strong>Zipcode:</strong></label>
+                    <input type="text" id="zipcode" value="" placeholder="15233" name="zipcode" maxlength="5"><br><br>
+                    
+                    <label for="optional_message"><strong>Message:</strong></label><br><br>
+                    <!-- source: https://www.w3schools.com/tags/att_textarea_form.asp -->
+                    <textarea id="optional_message" name="optional_message" placeholder="Anything to add?"></textarea><br>
+                
+                    <input type="checkbox" id="subscribe">
+                    <label for="subscribe"><strong>Subscribe to receive our monthly newsletter 'The Smiley Scoop'</strong></label>
+                </fieldset>
+
+                <fieldset>
+                    <input type="submit">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer_columns" id="footer_links">
+            <a href="index.html">Home</a><br>
+            <a href="index.html#bookmark">Our Story</a><br> 
+            <a href="our_menu.html">Our Menu</a><br>
+            <a href="catering.html">Catering</a><br> 
+            <a href="our_location.html#bookmark2">Store Hours</a><br>
+            <a href="our_location.html">Reach Us</a><br> 
+            <a href="contact_us.html">Feedback Form</a>
+        </div>
+
+        <div class="footer_columns" id="footer_logo">
+            <img src="images/logo.png" width="150" height="150" alt="Happy Day Dessert Factory Logo">
+        </div>
+
+        <div class="footer_columns" id="footer_address">
+            <p>Happy Day Dessert Factory<br>
+                906A Western Ave.<br>
+                Pittsburgh, PA 15233</p>
+                <button type="submit" onclick="window.location.href = 'contact_us.html';" class="button">Contact Us</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+</body>
+</html>

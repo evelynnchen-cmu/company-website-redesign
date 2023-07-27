@@ -1,0 +1,498 @@
+body {
+    
+    font-family: "DM Sans";
+    font-size: 100%;
+    line-height: 1.7em;
+    color: #4F5D75;
+    background-color: #e8e8e8;
+    /* source: https://css-tricks.com/forums/topic/div-doesnt-reach-edge-of-browser-page/ */
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    margin: 0.5em 0.5em 0.5em 0.5em;
+}
+
+html {
+    overflow-y: scroll; 
+}
+
+iframe {
+    margin: auto;
+    width: 560px;
+    height: 420px;
+    border: none;
+}
+
+h1 {
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+}
+
+h2 {
+    /* source: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_fonts_tahoma */
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.3;
+
+}
+
+h3 {
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.3;
+
+}
+
+h4 {
+    font-size: .75em;
+    font-weight: 300;
+    margin: 0;
+    margin-left: 5px;
+    border: 0;
+    padding: 0;
+    text-align: left;
+
+}
+
+#container {
+    width: 90%;
+    margin: 10px auto;
+}
+
+
+#nav_bar img {
+    margin-right: 6%;
+    margin-left: 3%;
+    /* source: https://www.w3schools.com/css/css_align.asp */
+    vertical-align: middle;
+    padding: 10px;
+    width: 90px;
+    height: 90px;
+}
+
+#nav_bar .nav_bar_text {
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    margin-right: 8%;
+    font-size:1.75em;
+    font-weight: 500;
+    padding: 0px;
+}
+
+#nav_bar a:link {
+    color: #4F5D75;
+    text-decoration: none;
+}
+
+#nav_bar a:visited {
+    color: #4F5D75;
+}
+
+#nav_bar a:hover {
+    color: #feaca5;
+}
+
+#nav_bar a.selected {
+    text-decoration: underline;
+    color: #C4C4FF;
+}
+
+#promos {
+    margin: auto;
+}
+
+.promo_columns {
+    float: left;
+    width: 31%;
+    border: 1px solid #4F5D75;
+    text-align: center;
+    margin-right: 3px;
+    border-radius: 11px;
+}
+
+.promo_columns {
+    /* source: https://www.w3schools.com/cssref/css3_pr_box-shadow.php */
+    box-shadow: 4px 4px 10px #4F5D75;
+}
+
+.promo_columns h2 {
+    font-weight: bold;
+}
+
+.promo_columns img {
+    width: 200px;
+    height: 300px;
+    box-shadow: 4px 4px 10px #C4C4FF;
+
+}
+
+/* source: https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur */
+#monthly_coupons img {
+    filter: blur(.25em);
+
+}
+
+#monthly_coupons .button:hover {
+    border: 3px solid #FF958C;
+}
+
+#about_us {
+    text-align: center;
+    margin-top: 500px;
+}
+
+.carousel-cell img {
+    height: 500px;
+    margin: 10px;
+    box-shadow: 7px 7px 10px #4F5D75;
+}
+#story {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.testimonial_columns {
+    float: left;
+    width: 31%;
+    border: 2px solid #4F5D75;
+    box-shadow: 5px 5px 10px #4F5D75;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 5px;
+    margin-right: 2px; 
+    border-radius: 8px;
+}
+
+.testimonial_columns img {
+    width: 75px;
+    height: 75px;
+    float: right;
+    bottom: 0;
+    border: 3px solid #FF958C;
+    border-radius: 20px;
+}
+
+.tour_columns {
+    float: left;
+    width: 48%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 2px;
+    
+} 
+
+#tour {
+    padding-top: 100px;
+}
+
+#tour_text {
+    text-align: center;
+    padding: 100px 0px;
+    /* height: 285px;  */
+}
+
+/* source: https://www.w3schools.com/howto/howto_css_image_center.asp */
+#tour_video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer {
+    clear: both;
+    margin: 0px;
+    /* padding: .5em; */
+    background-color: #4F5D75;
+    height: 250px;
+    color: #E5E5E5;
+}
+
+#footer .footer_columns {
+    float: left;
+    width: 32%;
+    margin-right: 3px; 
+    height: 225px;
+}
+
+#footer a {
+    padding: 10px;
+    text-align: left;
+    text-decoration: underline;
+    font-size: 1.25em;
+    color: #E5E5E5;
+}
+
+#footer a:hover {
+    color: #C4C4FF;
+}
+
+#footer #footer_address {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+#footer #footer_address p {
+    display: inline-block;
+    text-align: left;
+}
+
+#footer_logo {
+    text-align: center;
+}
+
+/* source: https://www.freecodecamp.org/news/how-to-center-an-image-in-css/ */
+#footer #footer_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .button:hover {
+    border: 3px solid #FF958C;
+}
+
+/* source: https://www.w3schools.com/howto/howto_css_round_buttons.asp*/
+.button {
+    background-color: #FFE478; 
+    border: 3px solid #FFE478;
+    color: #4F5D75;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.125em;
+    margin: 10px;
+    border-radius: 11px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #4F5D75;
+}
+
+#monthly_coupons .button {
+    margin-top: 15px;
+}
+
+#footer .button {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+/* ?contact_us styles */
+#contact_title h2 {
+    text-align: center;
+}
+
+#contact_title h3 {
+    text-align: center;
+}
+
+fieldset {
+    text-align: center;
+    border: 0;
+    font-size: 1.5em;
+}
+
+input {
+    background-color:#feaca5;
+    border-radius: 80px;
+    padding: 10px;
+    border: 2px solid #4F5D75;
+    box-shadow: 2px 2px 10px #4F5D75;
+}
+
+input:hover {
+    border: 2px solid #FF958C;
+}
+
+/* source: https://www.w3schools.com/css/tryit.asp?filename=trycss_form_textarea */
+textarea {
+    resize: none;
+    width: 45%;
+    height: 200px;
+    border-radius: 10px;
+    background-color:#feaca5;
+    font-family: "DM Sans";
+    font-size: .75em;
+    border: 2px solid #4F5D75;
+    box-shadow: 2px 2px 10px #4F5D75;
+}
+
+textarea:hover {
+    border: 2px solid #feaca5;
+}
+
+input[type="checkbox"] {
+    /* source: https://www.foxinfotech.org/change-checkbox-color */
+    accent-color:#FF958C;
+}
+
+input[type="submit"] {
+    font-family: "DM Sans";
+    background-color: #FFE478; 
+    border: 2px solid #FFE478;
+    color: #4F5D75;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.125em;
+    margin: 10px;
+    border-radius: 11px;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px #4F5D75;
+}
+
+input[type="submit"]:hover {
+    border: 2px solid #FF958C;
+}
+
+.map_columns {
+    float: left;
+    width: 48%;
+    text-align: center;
+    margin-right: 3px;
+}
+
+table {
+    border: none;
+	margin: auto;
+	table-layout: auto;
+}
+
+caption {
+    font-size: 1.55em;
+    line-height: 1.3;
+    text-align: center;
+}
+
+th {
+    width: 150px;
+    height: 100px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.75em;
+    padding: 15px;
+    text-align: right;
+}
+
+td {
+    font-size: 1.125em;
+    height: 40px;
+    padding: 2px;
+    text-align: center;
+}
+
+.news_columns {
+    float: left;
+    width: 31%;
+    border: 1px solid #4F5D75;
+    box-shadow: 5px 5px 10px #4F5D75;
+    text-align: center;
+    margin-right: 3px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.news_columns:hover {
+    border: 1px solid #FF958C;
+    box-shadow: 3px 3px 10px #FF958C;
+}
+
+#news img {
+    height: 225px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+}
+
+#news h2 {
+    text-align: left;
+    margin-left: 5px;
+}
+
+#news a:link {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+#news a:visited {
+    color:#feaca5;
+}
+
+#news a:hover {
+    color: #C4C4FF;
+}
+
+/* ?our_menu styles */
+
+.menu_columns {
+    float: left;
+    width: 31%;
+    text-align: center;
+    margin-right: 3px;
+    border-radius: 11px;
+    box-shadow: 4px 4px 10px #4F5D75;
+
+}
+
+.menu_columns img {
+    height: 225px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+}
+
+.menu_columns #gift_card img {
+    padding: 0;
+    margin-top: 10px;
+    border: 2px solid #FFE478;
+}
+
+/* catering styles */
+.catering_columns {
+    float: left;
+    width: 23%;
+    text-align: center;
+    margin-right: 3px;
+}
+
+.catering_content {
+    width: 95%;
+    border: 2px solid #4F5D75;
+    box-shadow: 1px 1px 10px #4F5D75;
+    margin: auto;
+    border-radius: 11px;
+}
+
+#catering_options h2 {
+    font-weight: bold;
+}
+
+.catering_content h3 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#catering_options img {
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+}
+
+#get_in_touch_button {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#get_in_touch_button .button:hover {
+    border: 3px solid #FF958C;
+}
